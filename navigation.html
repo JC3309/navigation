@@ -26,58 +26,65 @@
 
   <body>
 
-    <div id="top-navbar-template">
-      <a class="navbar-brand col-md-3 col-lg-2 me-0 px-4" href="#">DreamMa</a>
-      <button class="navbar-toggler d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
+     <div id="top-navbar-template" class="my-1 mx-3">
+    <button class="btn btn-outline-light rounded-circle border-0 p-2 mx-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-1" href="#">DreamMa</a>
   </div>
 
 
-    <div id="sidebarMenu-template" class="position-sticky pt-3 ">
-      <ul class="nav flex-column ">
-        <li class="nav-item sidebar-item">
-          <a class="nav-link active text-secondary" aria-current="page" href="#">
-            <i class="fas fa-university"></i> 院校选择
-          </a>
-        </li>
-        <li class="nav-item sidebar-item">
-          <a class="nav-link text-secondary" href="#">
-            <i class="fas fa-address-card"></i> 学生信息
-          </a>
-        </li>
+   <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarMenu-template" aria-labelledby="sidebarMenu-templateLabel">
+        <div class="offcanvas-header pb-0">
+          <h5 class="offcanvas-title" id="sidebarMenu-templateLabel">DreamMa</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body pt-0">
 
-        <li class="nav-item ">
-          <div class="accordion accordion-flush " id="accordionFlushExample">
-            <div class="accordion-item ">
-              <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed text-secondary nav-document-heading " type="button" data-bs-toggle="collapse" data-bs-target="#nav-document" aria-expanded="false" aria-controls="nav-document">
-                  <i class="fas fa-file-alt nav-document-icon"></i>
-                  文书准备
-                </button>
-              </h2>
-              <div id="nav-document" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body nav-document-body">
-                  <a class="nav-document-body-item" href="index.html">学科成绩</a>
-                  <a class="nav-document-body-item" href="#">其他成绩</a>
-                  <a class="nav-document-body-item" href="#">课外活动</a>
-                  <a class="nav-document-body-item" href="#">奖学金</a>
+          <div class="dropdown mt-3">
+            <ul class="nav flex-column fs-5">
+              <li class="nav-item sidebar-item my-1">
+                <a class="nav-link active text-secondary" aria-current="page" href="#">
+                  <i class="fas fa-university me-2"></i> 院校选择
+                </a>
+              </li>
+              <li class="nav-item sidebar-item my-1">
+                <a class="nav-link text-secondary" href="#">
+                  <i class="fas fa-address-card me-2"></i> 学生信息
+                </a>
+              </li>
+
+              <li class="nav-item my-1">
+                <div class="accordion accordion-flush " id="allDocumentation">
+                  <div class="accordion-item ">
+                    <h2 class="accordion-header" id="allDocumentation-headingOne">
+                      <button class="accordion-button collapsed text-secondary nav-document-heading fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#nav-document" aria-expanded="false" aria-controls="nav-document">
+                        <i class="fas fa-file-alt nav-document-icon me-2"></i>
+                        文书准备
+                      </button>
+                    </h2>
+                    <div id="nav-document" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body nav-document-body">
+                        <a class="nav-document-body-item" href="index.html">学科成绩</a>
+                        <a class="nav-document-body-item" href="#">其他成绩</a>
+                        <a class="nav-document-body-item" href="#">课外活动</a>
+                        <a class="nav-document-body-item" href="#">奖学金</a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
+              </li>
+
+              <hr>
+              <li class="nav-item sidebar-item my-1">
+                <a class="nav-link text-secondary" href="#">
+                  <i class="fas fa-cloud-upload-alt me-2"></i> Submit
+                </a>
+              </li>
+            </ul>
           </div>
-        </li>
-
-
-        <hr>
-        <li class="nav-item sidebar-item">
-          <a class="nav-link text-secondary" href="#">
-            <i class="fas fa-cloud-upload-alt"></i> Submit
-          </a>
-        </li>
-      </ul>
-    </div>
+        </div>
+      </div>
 
   </body>
 </html>
